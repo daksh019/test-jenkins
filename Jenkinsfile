@@ -22,10 +22,10 @@ pipeline {
             cleanWs()
         }
         failure {
-
+            echo 'All steps pass!'
         }
         success {
-
+            echo 'All steps fail!'
         }
     }
 }
