@@ -1,0 +1,13 @@
+{
+  "name": "verifone-portal",
+  "dependencies": {
+    "lodash": "4.17.15"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "test": "ng test"
+  },
+  "version": "1.2.2"
+}
