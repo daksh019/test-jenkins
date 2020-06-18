@@ -3,12 +3,16 @@ pipeline {
  stages {
         stage('Lint') {
             steps {
-                'ng lint'
+                script {
+                    'ng lint'
+                }
             }
         }
         stage('Test') {
             steps {
-                'ng test'
+                script {
+                    'ng test'
+                }
             }
         }
     }
