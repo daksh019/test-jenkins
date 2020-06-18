@@ -3,12 +3,12 @@ pipeline {
  stages {
         stage('Lint') {
             steps {
-                sh 'ng lint'
+                'ng lint'
             }
         }
         stage('Test') {
             steps {
-                sh 'ng test'
+                'ng test'
             }
         }
     }
