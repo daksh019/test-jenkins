@@ -3,18 +3,12 @@ pipeline {
  stages {
         stage('Lint') {
             steps {
-                script {
-                    echo 'linting now'
-                    'ng lint'
-                }
+                sh 'ng lint'
             }
         }
         stage('Test') {
             steps {
-                script {
-                    echo 'testing now'
-                    'ng test'
-                }
+                sh 'ng test'
             }
         }
     }
@@ -23,10 +17,10 @@ pipeline {
             cleanWs()
         }
         failure {
-            echo 'All steps pass!'
+            echo 'All steps fail!'
         }
         success {
-            echo 'All steps fail!'
+            echo 'All steps pass!'
         }
     }
 }
