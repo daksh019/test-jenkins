@@ -4,6 +4,7 @@ pipeline {
         stage('Lint') {
             steps {
                 script {
+                    echo 'linting now'
                     'ng lint'
                 }
             }
@@ -11,6 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
+                    echo 'testing now'
                     'ng test'
                 }
             }
