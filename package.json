@@ -1,7 +1,7 @@
 {
   "name": "verifone-portal",
   "dependencies": {
-    "lodash": "4.17.15"
+    "lodash": "4.17.19"
   },
   "license": "MIT",
   "private": true,
